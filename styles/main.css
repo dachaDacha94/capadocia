@@ -1,0 +1,185 @@
+@import url("./reset.css");
+@import url("./font.css");
+body {
+  background-image: url("../assets/img/bg.png");
+  background-repeat: no-repeat;
+  background-size: 100%;
+}
+.wrapper {
+  width: 100%;
+  height: 100%;
+  max-width: 1240px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* header */
+.header {
+  height: 150px;
+}
+.header-logo {
+  color: #fff;
+  font-family: Poppins;
+  font-size: 15.039px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 119%; /* 17.897px */
+  max-width: 65.171px;
+  display: flex;
+  gap: 10px;
+}
+.header-logo::after {
+  /* поменять на свг  */
+  content: url("../assets/img/icon-logo.png");
+  width: 28.345px;
+  height: 28.345px;
+}
+.header-nav {
+  display: flex;
+  align-items: center;
+  gap: 50px;
+}
+.header-nav-link {
+  color: #fff;
+  font-family: Rubik;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+.active { 
+  position: relative;
+
+}
+.active::after{
+  content: "";
+  width: 16px;
+  height: 3px;
+  background-color: #e30a17;
+  position: absolute;
+  bottom: -8px;
+  left: 15px;
+  
+}
+/* a {
+  position: relative;
+  cursor: pointer;
+} */
+/* нужна пояснительная бригада) */
+/* a:after {
+  display: block;
+  position: absolute;
+  width: 16px;
+  height: 3px;
+  left: 10;
+  width: 0;
+  height: 2px;
+  background-color: #e30a17; 
+  content: "";
+  transition: width 0.3s ease-out; 
+}
+a:hover:after,
+a:focus:after {
+  width: 50%;
+}
+.header-nav-link-img {
+  width: 18px;
+  height: 18px;
+} */
+
+/* promo */
+.promo .wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: baseline;
+}
+.heading {
+  max-width: 546px;
+  margin-top: 177px;
+  margin-bottom: 18px;
+  color: #fff;
+  font-family: Rubik;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 104.5%; /* 66.88px */
+}
+.promo-text {
+  max-width: 527px;
+  margin-bottom: 18px;
+  color: #fff;
+  font-family: Rubik;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+/* почему баттон отличается? */
+.promo-button {
+  padding: 10px 25px;
+  background: var(--Primary-Color, #e30a17);
+  box-shadow: 0px 2px 4px 0px #831219;
+  color: #fff;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  margin-bottom: 193px;
+  border: none;
+}
+.promo-sochial {
+  display: flex;
+  gap: 20px;
+}
+
+.popup {
+  width: 100%;
+  max-width: 296px;
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+.popup-body {
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0.50) -3.55%, rgba(255, 255, 255, 0.00) 120.14%);
+backdrop-filter: blur(11.703703880310059px);
+  display: flex;
+  flex-direction: column;
+padding: 23px 35px;
+
+
+}
+.popup-heading {
+  color: #FFF;
+font-family: Rubik;
+font-size: 18.726px;
+font-style: normal;
+font-weight: 900;
+line-height: normal;
+}
+.popup-text {
+  color: #FFF;
+font-family: Rubik;
+font-size: 14px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+.popup-link {
+  padding-top: 18px;
+  padding-bottom: 18px;
+  padding-right: 21px;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 15px;
+background: var(--Primary-Color, #E30A17);
+  color: #FFF;
+font-family: Rubik;
+font-size: 14.044px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
